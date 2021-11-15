@@ -1,0 +1,33 @@
+﻿@model WebTasks.Models.Appointment
+
+@using Microsoft.AspNetCore.Identity
+@using WebTasks.Areas.Identity.Data
+
+@inject SignInManager<WebTasksUser> SignInManager
+@inject UserManager<WebTasksUser> UserManager
+
+<div class="container">
+    <div class="text-center">
+        <div class="col-lg-12">
+            <form method="post" asp-action="edit_app" asp-controller="user">
+                <input asp-for="Id" hidden />
+                <input asp-for="user_id" value="@UserManager.GetUserId(User)" hidden />
+                <input asp-for="status" hidden />
+                <div class="form-group">
+                    <label asp-for="time">Choose A perfect time for you!</label>
+                    <input asp-for="time" class="form-control" id="date" required>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="plan">Choose A plan</label>
+                    <select class="form-control" asp-for="plan">
+                        <option plan="basic">BASIC</option>
+                        <option plan="premium">PREMIUM</option>
+                    </select>
+                </div>
+                <button class="btn btn-primary" type="submit">Update</button>
+            </form>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,450 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+    color: #0366d6;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.border-top {
+    border-top: 1px solid #e5e5e5;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+    font-size: 1rem;
+    line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px; /* Vertically center the text there */
+}
+
+.left-nav {
+    background: #f7f8fc;
+}
+
+.left-nav, .right-nav {
+    padding: 60px;
+}
+
+ul li {
+    list-style: none;
+}
+
+
+
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #333333;
+}
+
+a {
+    color: #333333
+}
+
+.active {
+    background-color: #3F71FE;
+    border-radius: 20px;
+}
+
+    .active a {
+        color: #FFF;
+    }
+
+.p-100 {
+    padding: 100px 0;
+}
+
+.pb-40 {
+    padding-bottom: 40px;
+}
+
+.p-277 {
+    padding: 277px 0;
+}
+
+h1 {
+    font-size: 37px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 600
+}
+/*----------- -02- NAVBAR ----------*/
+.navbar-brand {
+    font-weight: 900;
+    font-size: 25px;
+}
+
+.navbar {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.navbar-nav li {
+    margin-right: 5px;
+}
+
+    .navbar-nav li a {
+        transition: 0.3s
+    }
+
+        .navbar-nav li a:hover {
+            background-color: #3F71FE;
+            border-radius: 20px;
+            color: #FFF;
+            transition: 0.3s
+        }
+
+.owl-item {
+    margin-bottom: 10px;
+}
+/*----------- -03- HOMESECTION ----------*/
+.home-section {
+    background-color: #f5f5f5;
+    /* background-image: url(../images/bg-home.png); */
+}
+
+    .home-section span {
+        font-size: 24px;
+        opacity: 0.8;
+    }
+
+    .home-section ul li {
+        margin-right: 10px;
+        display: inline-block;
+    }
+/*----------- -04- ABOUTSECTION ----------*/
+.about-section h2 {
+    color: #3F71FE;
+    font-weight: 600
+}
+
+.about-info-top p {
+    font-size: 13px;
+    opacity: 0.8;
+    padding-bottom: 20px;
+}
+
+.we-do {
+    padding: 25px;
+    transition: 0.3s;
+}
+
+    .we-do p {
+        font-size: 13px;
+        opacity: 0.9;
+    }
+
+    .we-do img {
+        padding-bottom: 10px;
+    }
+
+    .we-do:hover {
+        -webkit-box-shadow: 0px 0px 37px -19px rgba(0,0,0,0.34);
+        -moz-box-shadow: 0px 0px 37px -19px rgba(0,0,0,0.34);
+        box-shadow: 0px 0px 37px -19px rgba(0,0,0,0.34);
+        border-radius: 30px;
+        transition: 0.3s;
+    }
+/*----------- -08 TESTMONIALSSECTION ----------*/
+.testmonial-section {
+    background: #333333;
+}
+
+    .testmonial-section h2 {
+        color: #FFF;
+        padding-bottom: 30px;
+        padding-top: 30px
+    }
+
+.testmonial-item {
+    background: #FFF;
+    border-radius: 30px;
+    padding: 13px;
+    margin-bottom: 40px
+}
+
+    .testmonial-item p {
+        opacity: 0.7;
+        font-size: 13px;
+    }
+
+    .testmonial-item h3 {
+        font-weight: 600;
+        font-size: 16px;
+        padding-top: 5px
+    }
+
+    .testmonial-item div {
+        padding-top: 10px;
+        padding-bottom: 3px
+    }
+
+    .testmonial-item img {
+        border-radius: 100px;
+    }
+/*----------- -09 PLANSSECTION ----------*/
+.plans-section {
+    padding-bottom: 190px
+}
+
+    .plans-section h2 {
+        color: #3F71FE;
+        font-weight: 600;
+        margin-bottom: 70px;
+    }
+
+.the_plan {
+    padding: 30px;
+    padding-bottom: 4px;
+    border-color: red;
+    -webkit-box-shadow: 0px 0px 22px -11px rgba(0,0,0,0.34);
+    -moz-box-shadow: 0px 0px 22px -11px rgba(0,0,0,0.34);
+    box-shadow: 0px 0px 22px -11px rgba(0,0,0,0.34);
+    margin: -30px;
+    transform: scale(0.97);
+}
+
+    .the_plan h3 {
+        font-size: 25px;
+        margin-bottom: 23px;
+    }
+
+.planinfo {
+    opacity: 0.8;
+    font-weight: 300
+}
+
+.price {
+    font-size: 50px;
+    opacity: 1;
+}
+
+.the_plan span {
+    font-size: 20px;
+}
+
+.blue-info {
+    background: url(../images/AS.png), linear-gradient(to right, rgba(63, 113, 254, 1), rgba(63, 113, 254, 1));
+    background-position: center;
+    background-size: cover;
+    margin: -30px;
+    padding: 30px;
+    color: #FFF;
+    position: relative;
+    top: 30px;
+    padding-top: 49px
+}
+
+    .blue-info ul li {
+        text-decoration: none;
+        margin-bottom: 10px;
+        font-weight: 300
+    }
+
+.premium .blue-info {
+    background: linear-gradient(to right, rgba(242, 74, 74, 1), rgba(242, 74, 74, 1));
+}
+
+.premium {
+    transform: scale(1);
+}
+/*----------- -11 CONTACTSECTION ----------*/
+.input-group input,
+textarea {
+    margin-right: 20px;
+    border-radius: 6px;
+    border-style: none;
+    padding: 10px;
+    margin: 10px;
+    background: linear-gradient(to right, rgba(63, 113, 254, 0.8), rgba(63, 113, 254, 0.8));
+    ;
+    color: #FFF;
+}
+
+textarea {
+    height: 200px
+}
+
+.contact-section .happy-btn {
+    color: #FFF
+}
+
+::placeholder {
+    color: #FFF
+}
+/*----------- -12- FOOTERSECTION ----------*/
+footer p {
+    font-size: 15px;
+    opacity: 0.5;
+    margin-top: 15px;
+}
+
+footer {
+    background-color: #3F71FE;
+}
+
+    footer .row {
+        padding: 20px;
+    }
+
+.d {
+    width: fit-content;
+}
+
+/*----------- -12- FOOTERSECTION ----------*/
+footer p {
+    font-size: 15px;
+    opacity: 0.5;
+    margin-top: 15px;
+}
+
+footer {
+    padding: 10px;
+    color: #FFF;
+}
+
+.elbox {
+    margin: auto;
+    padding: 40px;
+    text-align: center;
+    border-radius: 45px;
+    -webkit-box-shadow: 0px 0px 47px -37px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 0px 47px -37px rgba(0,0,0,1);
+    box-shadow: 0px 0px 47px -37px rgba(0,0,0,1);
+}
+
+    .elbox h1 {
+        font-size: 19px;
+    }
+
+#fname {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 30px;
+    border: 1px solid #000;
+}
+
+.btn {
+    border: 1px solid #3F71FE;
+    border-radius: 30px;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #3F71FE;
+    color: #FFF
+}
+
+.s {
+    width: 10%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #000;
+    opacity: 0.8; /* Firefox */
+    font-size: 14px;
+}
+
+.the_plan .btn {
+    background: #FFF;
+    color: #000;
+    width: 100%;
+}
+
+.prd {
+    padding: 20px;
+    background-color: #FFF;
+    -webkit-box-shadow: 0px 0px 37px -19px rgba(0,0,0,0.34);
+    -moz-box-shadow: 0px 0px 37px -19px rgba(0,0,0,0.34);
+    box-shadow: 0px 0px 37px -19px rgba(0,0,0,0.34);
+}
+
+    .prd h4 {
+        margin: 10px;
+        font-size: 17px;
+    }
+
+.prod-section h2 {
+    color: #000;
+    padding-bottom: 30px;
+    padding-top: 30px
+}
+
+.contact-section ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #fff;
+    opacity: 0.8; /* Firefox */
+    font-size: 14px;
+}
+footer a{
+    color:#fff
+}

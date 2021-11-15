@@ -1,0 +1,59 @@
+﻿@model IEnumerable<Shop>
+
+
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-3 left-nav text-left">
+            <ul>
+                <li>Home</li>
+                <li><a asp-action="orders" asp-controller="administration">Orders</a></li>
+                <li><a asp-action="shop" asp-controller="administration">Shop</a></li>
+                <li>Reviews</li>
+            </ul>
+        </div>
+        <div class="col-lg-9 right-nav">
+            <div id="wrapper">
+                <div id="page-wrapper">
+
+                    <div class="container-fluid">
+
+                        <!-- Page Heading -->
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <h1 class="page-header">
+                                    <small>Products</small>
+
+                                    <a asp-action="add_item" asp-controller="administration" class="btn btn-outline-dark">Add New Item</a>
+
+                                </h1>
+                                <div class="row text-center">
+
+                                    @foreach (var o in Model)
+                                    {
+                                        <div class="col-lg-2 prd">
+
+                                            <img class="img-responsive" src="" />
+
+
+                                            <h4>@o.title</h4>
+                                            <p>@o.price</p>
+                                            <a asp-route-id="@o.Id" asp-controller="administration" asp-action="delete_item" class="form-control btn btn-danger">Delete</a>
+                                            <a asp-route-id="@o.Id" asp-controller="administration" asp-action="edit_item" class="form-control btn btn-danger">Edit</a>
+                                        </div>
+
+                                    }
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

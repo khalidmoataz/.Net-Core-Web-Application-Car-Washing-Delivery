@@ -1,0 +1,28 @@
+﻿@model IEnumerable<Appointment>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Date</th>
+            <th scope="col">Status</th>
+            <th scope="col">Plan</th>
+            <th scope="col">Action</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (var appntmnt in Model)
+        {
+        <tr>
+            <td>@appntmnt.time</td>
+            <td>@appntmnt.status</td>
+            <td>@appntmnt.plan</td>
+            <td>
+                <a asp-route-Id="@appntmnt.Id" asp-action="Edit_app" asp-controller="user">Edit</a>|
+                <a asp-route-Id="@appntmnt.Id" asp-action="Delete_app" asp-controller="user">Delete</a>
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>
